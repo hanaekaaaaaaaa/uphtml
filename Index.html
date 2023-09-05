@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Registrasi</title>
+</head>
+<body>
+    <h2>Form Registrasi</h2>
+    <form action="proses_registrasi.php" method="post">
+        <label for="nama">NAMA:</label>
+        <input type="text" id="NAMA" name="NAMA" required><br><br>
+
+        <label for="TANGGAL_LAHIR">TANGGAL LAHIR:</label>
+        <input type="date" id="TANGGAL_LAHIR" name="TANGGAL_LAHIR" required><br><br>
+
+        <label for="JENIS_KELAMIN">JENIS KELAMIN:</label>
+        <input type="RADIO" id="LAKI_LAKI" name="JENIS_KELAMIN" value="LAKI-LAKI" required>
+        <label for="LAKI_LAKI">LAKI-LAKI</label>
+        <input type="radio" id="PEREMPUAN" name="JENIS_KELAMIN" value="PEREMPUAN" required>
+        <label for="PEREMPUAN">PERMPUAN</label><br><br>
+
+        <label for="alamat">ALAMAT:</label>
+        <textarea id="alamat" name="alamat" required></textarea><br><br>
+
+        <label for="email">EMAIL:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="no_hp">NOMER HP:</label>
+        <input type="tel" id="no_hp" name="no_hp" required><br><br>
+
+        <label for="kota">KOTA PILIHAN:</label>
+        <select id="kota" name="kota" required>
+            <option value="Blitar">Blitar</option>
+            <option value="Surabaya">Surabaya</option>
+            <option value="Kediri">Kediri</option>
+            <option value="Tulungagung">Tulungagung</option>
+            <option value="Malang">Malang</option>
+            <option value="Madiun">Madiun</option>
+            <option value="Nganjuk">Nganjuk</option>
+        </select><br></br>
+        <input type="checkbox" id="remember" name="remember" value="1">
+        <label for="remember">Saya Menyetujui Peraturan Yang Ada</label><br><br>
+
+        <input type="submit" value="Simpan">
+        <input type="submit" value="Batal">
+        <p>Belum punya akun?<a href="login.html">Registrasi</a></p><br><br>
+
+    </form>
+</body>
+</html>
